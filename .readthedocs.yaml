@@ -1,0 +1,19 @@
+version: 2
+
+#Set the OS, Python version and other tools you might need
+build:
+  os: ubuntu-22.04
+  tools:
+    python:  "3.13"
+
+
+sphinx:
+  configuration: source/conf.py
+
+
+formats:
+  - pdf
+
+python:
+  install:
+    - requirements: requirements.txt
